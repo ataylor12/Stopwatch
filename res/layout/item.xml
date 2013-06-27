@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/adapter_number_size"
+    android:paddingLeft="@dimen/adapter_padding" >
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="@dimen/adapter_number_size"
+        android:layout_height="@dimen/adapter_number_size"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/adapter_number_text_size" />
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="34dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dip"
+        android:layout_toLeftOf="@id/number"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/adapter_padding"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/text_dark" />
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="34dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="10dip"
+        android:layout_toLeftOf="@id/number"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/adapter_padding"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/list_text_secondary" />
+
+</RelativeLayout>

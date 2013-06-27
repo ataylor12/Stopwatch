@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="stopwatch_activity">Секундомер</string>
+    <string name="stopwatch_pause">Пауза</string>
+    <string name="stopwatch_start">Старт</string>
+    <string name="stopwatch_lap">Круг</string>
+    <string name="stopwatch_reset">Сбросить</string>
+    <string name="timer_add">Добавить</string>
+    <string name="timer_label">ТАЙМЕР</string>
+    <string name="stopwatch_label">СЕКУНДОМЕР</string>
+    <string name="add_save">Сохранить</string>
+    
+    
+    <string name="time_day1">день</string>
+    <string name="time_day2">дня</string>
+    <string name="time_day3">дней</string>
+    <string name="time_hour1">час</string>
+    <string name="time_hour2">часа</string>
+    <string name="time_hour3">часов</string>
+    
+    
+    <string name="add_label">НОВЫЙ ТАЙМЕР</string>
+    <string name="add_new_timer">Новый таймер</string>
+    <string name="add_repeat1">Повторять</string>
+    <string name="add_repeat2">Повторять таймер через ЧЧ:ММ:СС после его окончания</string>
+    
+    <string name="notification_timer">Таймер активен</string>
+    <string name="notification_stopwatch1">Секундомер активен</string>
+    <string name="notification_stopwatch2">Круги</string>
+    
+    <string name="menu_about">О программе</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_changelog">Изменения</string>
+    
+    <string name="changelog_last">Последние</string>
+    <string name="changelog_all">Все</string>
+    
+    <string name="about">Секундомер \u0026 Таймер</string>
+    <string name="about1">О программе</string>
+    <string name="about2">Больше информации о проекте</string>
+    <string name="about_translate">Переводы</string>
+    <string name="about_copyright">Авторское право</string>
+    <string name="about_version">Версия / Изменения</string>
+    
+    <string name="feedback1">Обратная связь</string> 
+    <string name="feedback2">Форма обратной связи с автором</string> 
+    
+    <string name="locale1">Локализация</string> 
+    <string name="locale2">Принудительное изменение локализации виджета</string> 
+    <string name="locale_toast">Для применения внесенных изменений перезагрузите программу</string>
+    
+    <string name="other">Другое</string>
+    <string name="settings">Настройки</string>
+    <string name="behavior">Поведение</string>
+    <string name="notifications">Уведомления</string>
+    
+    <string name="stopwatch">Секундомер</string>
+    <string name="timer">Таймер</string>
+    <string name="timer_list_unrepeat">Таймер не повторяется</string>
+    
+    <string name="timer_sound1">Звук</string>
+    <string name="timer_sound2">Играть звук таймера по его окончанию</string>
+    <string name="timer_vibro1">Вибрация</string>
+    <string name="timer_vibro2">Вибрировать по окончанию таймера</string>
+    <string name="timer_wakelock1">Не засыпать</string>
+    <string name="timer_wakelock2">Экспериментально! Может увеличить расход батареи, но повысит стабильность</string>
+    <string name="timer_notifications1">Уведомления</string>
+    <string name="timer_notifications2">Показывать уведомление пока таймер активен</string>
+    <string name="timer_notifications3">Показывать уведомление пока секундомер активен</string>
+    
+    <string name="stopwatch_textmode3">Показывать полное время</string>
+    <string name="stopwatch_textmode2">Показывать время круга</string>
+    <string name="stopwatch_textmode1">Время круга</string>
+</resources>

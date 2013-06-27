@@ -1,0 +1,42 @@
+reinstall_apps
+buttons=query("button")
+buttons
+reinstall_apps
+start_test_server_in_background
+buttons=query("button")
+exit
+exiit
+exit
+reinstall_apps
+start_test_server_in_background
+buttons=query('button')
+texts=query('textView')
+query("view:'stopwatch_mm_ss' label text")
+query("view:'stopwatch_mm_ss'")
+query("id:'stopwatch_mm_ss'")
+query("label id:'stopwatch_mm_ss'")
+query("TextView id:'stopwatch_mm_ss'")
+value = query("TextView id:'stopwatch_mm_ss'")
+value.text
+exit
+start_test_server_in_background
+query("linearlayout")
+query("linearlayout id:'numberpickercontainer'")
+start_test_server_in_background
+query("linearlayout id:'numberpickercontainer'")
+query("numberpickerlite")
+start_test_server_in_background
+query("textview text:'New Timer'")
+query("textview text:'New timer'")
+query("numberpickerlite")
+query("button text:'Save'")
+start_test_server_in_background
+query("textview id='repeattextcontainer'")
+query("linearlayout id='repeattextcontainer'")
+query("linearlayout id:'repeattextcontainer'")
+clear
+cls
+query("linearlayout id:'repeattextcontainer'")
+query("numberpickerlite")
+start_test_server_in_background
+query("listitem")

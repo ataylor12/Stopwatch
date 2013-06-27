@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/about" >
+        <Preference
+            android:key="aboutChangelog"
+            android:summary="@string/version"
+            android:title="@string/about_version" />
+        <Preference
+            android:key="aboutCopyright"
+            android:title="@string/about_copyright" />
+
+        <PreferenceScreen android:title="@string/about_translate" >
+            <PreferenceCategory android:title="@string/about_translate" >
+                <Preference
+                    android:key="aboutMember-AChep@xda"
+                    android:summary="AChep@xda"
+                    android:title="English, Russian, Ukrainian" />
+                <Preference
+                    android:key="aboutMember-doixanh@xda"
+                    android:summary="doixanh@xda"
+                    android:title="Vietnamese" />
+                <Preference
+                    android:key="aboutMember-SaperR@xda"
+                    android:summary="SaperR@xda"
+                    android:title="Polish" />
+                <Preference
+                    android:key="aboutMember-stelios97@xda"
+                    android:summary="stelios97@xda"
+                    android:title="Greek" />
+                <Preference
+                    android:key="aboutMember-fifo171@xda"
+                    android:summary="fifo171@xda"
+                    android:title="Slovak" />
+                <Preference
+                    android:key="aboutMember-brendow96@xda"
+                    android:summary="brendow96@xda"
+                    android:title="Brazilian Portuguese" />
+                <Preference
+                    android:key="aboutMember-Mattzbp@xda"
+                    android:summary="Mattzbp@xda"
+                    android:title="Spanish" /> 
+                <Preference
+                    android:key="aboutMember-grifferz2@crowdin"
+                    android:summary="grifferz2@crowdin"
+                    android:title="Portuguese" />               
+                
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

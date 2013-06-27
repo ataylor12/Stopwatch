@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/add_label"
+        android:textColor="@color/text_light"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="15dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:text="@string/add_new_timer"
+                android:textColor="@color/text_light"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:id="@+id/numberpickercontainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_background_dark"
+                android:orientation="horizontal" >
+
+                <com.achep.stopwatch.widget.NumberPickerLite
+                    android:id="@+id/add_timer_hh"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.achep.stopwatch.widget.NumberPickerLite
+                    android:id="@+id/add_timer_mm"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.achep.stopwatch.widget.NumberPickerLite
+                    android:id="@+id/add_timer_ss"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_timer_repeat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector"
+                android:orientation="horizontal"
+                android:paddingRight="10dip"
+                android:paddingLeft="10dip"
+                android:paddingBottom="10dip"
+                android:paddingTop="15dip" >
+
+                <LinearLayout
+                    android:id="@+id/repeattextcontainer"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_repeat1"
+                        android:textColor="@color/text_light"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_repeat2"
+                        android:textColor="@color/text_light"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/add_timer_repeat_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/btn_check_holo_dark"
+                    android:gravity="center"
+                    android:padding="5dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_background_dark"
+                android:orientation="horizontal" >
+
+                <com.achep.stopwatch.widget.NumberPickerLite
+                    android:id="@+id/add_timer_hh2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.achep.stopwatch.widget.NumberPickerLite
+                    android:id="@+id/add_timer_mm2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.achep.stopwatch.widget.NumberPickerLite
+                    android:id="@+id/add_timer_ss2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@color/btn_devider_dark" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/buttons_height"
+        android:background="@drawable/list_selector"
+        android:text="@string/add_save"
+        android:textColor="@color/text_light" />
+
+</LinearLayout>

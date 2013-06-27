@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.achep.stopwatch"
+    android:versionCode="4"
+    android:versionName="@string/version" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+	
+    <uses-sdk android:minSdkVersion="7" />
+     
+
+    <application
+        android:icon="@drawable/ic_launcher_stopwatch"
+        android:label="@string/stopwatch_activity" >
+        <activity
+            android:name="StopwatchActivity"
+            android:label="@string/stopwatch_activity"
+            android:theme="@style/Theme.NoTitleBar"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="Settings"
+            android:theme="@style/Theme.Default" />
+        
+        <activity
+            android:name="SettingsAbout"
+            android:theme="@style/Theme.Default" />
+        
+        <activity
+            android:name="Changelog"
+            android:theme="@style/Theme.Dialog.NoTitleBar" />
+        
+        <activity
+            android:name=".ChangelogContent"
+            android:theme="@style/Theme.Dialog.NoTitleBar" />
+        
+        <service android:name="ServiceTimer" />
+        <service android:name="ServiceKlaxon" />
+
+        <receiver android:name="BroadcastRec" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

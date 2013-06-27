@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceScreen android:title="@string/stopwatch" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="stopwatchTextMode"
+            android:summary="@string/stopwatch_textmode2"
+            android:title="@string/stopwatch_textmode1" />
+
+        <PreferenceCategory android:title="@string/notifications" >
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="stopwatchNotifications"
+                android:summary="@string/timer_notifications3"
+                android:title="@string/timer_notifications1" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/timer" >
+        <PreferenceCategory android:title="@string/behavior" >
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="timerSound"
+                android:summary="@string/timer_sound2"
+                android:title="@string/timer_sound1" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="timerVibro"
+                android:summary="@string/timer_vibro2"
+                android:title="@string/timer_vibro1" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/notifications" >
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="timerNotifications"
+                android:summary="@string/timer_notifications2"
+                android:title="@string/timer_notifications1" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/other" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="timerWakeLock"
+                android:summary="@string/timer_wakelock2"
+                android:title="@string/timer_wakelock1" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+    <PreferenceCategory android:title="@string/other" >
+        <ListPreference
+            android:defaultValue="system"
+            android:entries="@array/locale_1"
+            android:entryValues="@array/locale_2"
+            android:key="settingsLocale"
+            android:summary="@string/locale2"
+            android:title="@string/locale1" />
+
+        <Preference
+            android:key="settingsFeedback"
+            android:summary="@string/feedback2"
+            android:title="@string/feedback1" />
+        <Preference
+            android:key="settingsAbout"
+            android:summary="@string/about2"
+            android:title="@string/about1" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

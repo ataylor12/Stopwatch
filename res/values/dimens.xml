@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="adapter_number_text_size">30sp</dimen>
+    <dimen name="adapter_number_size">68dip</dimen>
+    <dimen name="adapter_padding">12dip</dimen>
+    
+    <dimen name="time_size_large">60sp</dimen>   
+    <dimen name="time_size_small">30sp</dimen> 
+         
+    <dimen name="add_padding">15dip</dimen> 
+    <dimen name="add_description_divider_height">2dip</dimen> 
+    <dimen name="add_divider_height">1dip</dimen>   
+    <dimen name="add_title_text">25sp</dimen>    
+    <dimen name="add_description_text">14sp</dimen>  
+      
+    <dimen name="numberpaicker_buttons_text_size">20sp</dimen> 
+    <dimen name="numberpaicker_value_text_size">30sp</dimen>      
+    
+    <dimen name="buttons_height">55dip</dimen>  
+    <dimen name="changelog_min_width">270dip</dimen> 
+    
+    <!-- List Adapter: item.xml -->
+    <dimen name="item_">55dip</dimen>  
+    
+</resources>

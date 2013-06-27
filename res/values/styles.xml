@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme" parent="@android:style/Theme">
+        <item name="android:listDivider">@drawable/black</item>
+        <item name="android:windowBackground">@drawable/background_dark</item>
+        <item name="android:colorBackground">@null</item>
+    </style>
+    <style name="Theme.Default" parent="@android:style/Theme">
+        <item name="android:colorBackground">@null</item>
+    </style>
+
+    <style name="Theme.NoTitleBar" parent="@style/Theme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Dialog.NoTitleBar" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>      
+    </style>
+</resources>

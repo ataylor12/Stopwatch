@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="locale_1">
+        <item>System</item>
+        <item>English</item>
+        <item>ελληνικά</item>
+        <item>Polski</item>
+        <item>Русский</item>
+        <item>Slovenských</item>
+        <item>Việt</item>
+        <item>Украинский</item>
+    </string-array>
+    <string-array name="locale_2">
+        <item>system</item>
+        <item>en</item>
+        <item>el</item>
+        <item>pl</item>
+        <item>ru</item>
+        <item>sk</item>
+        <item>vi</item>
+        <item>uk</item>
+    </string-array>
+</resources>

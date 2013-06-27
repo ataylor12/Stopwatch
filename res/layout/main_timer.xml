@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/timer_label"
+        android:textColor="#FFF"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <TextView
+            android:id="@+id/timer_mm_ss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textSize="50sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/timer_hh"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/timer_dd"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/timer_add"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:gravity="right|center_vertical"
+            android:text="+"
+            android:textColor="#AAA"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/timer_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_background_dark"
+            android:fadingEdge="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/start_timer"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:textColor="@color/text_dark" />
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/btn_devider_dark" />
+
+        <Button
+            android:id="@+id/clear_timer"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_weight="1"
+            android:background="@drawable/list_selector"
+            android:text="@string/stopwatch_reset"
+            android:textColor="@color/text_dark" />
+    </LinearLayout>
+
+</LinearLayout>

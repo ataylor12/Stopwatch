@@ -1,0 +1,50 @@
+## 2.1.2beta - 19.07.12    
+- Smoothened scrolling      
+- Improved adding timers
+- Updated User Interface
+- Some changes in behavior
+
+## 2.1.0beta - 18.07.12          
+- Improved stopwatch's data saving   
+- Polish translate (thanks to SaperR@xda)
+- Vietnamese translate (thanks to doixanh@xda)
+- Greek translate (thanks to stelios97@xda)
+- Slovak translate (thanks to fifo171@xda)
+- Brazilian Portuguese translate (thanks to brendow96@xda)
+- Ukrainian translate
+- Spanish translate (thanks to Mattzbp@xda)
+- Portuguese translate (thanks to grifferz2@xda)
+
+## 2.0.0beta - 16.07.12             
+- Improved data saving
+- Optimized timer adding
+- Two types of stopwatch's title time
+- Option: Wake up device when timer is running
+- Some stability improvements
+- Fixed repeat timers
+- Some changes in button's behavior
+- Option: disable/enable timer notification
+- Fixed notification icon size for 2.3- 
+- Options sorted by categories
+- Supported Android 2.1+
+- Option: Stopwatch's notification
+- Fixed non-standard themes support
+
+## 1.1.0beta - 14.07.12             
+- new: Settings             
+- new: Feedback form        
+- new: page About
+
+## 1.0.4beta - 13.07.12
+- fixed FCs
+
+## 1.0.3beta - 13.07.12
+- fixed all issues with notification
+- fixed bug with timer pause
+
+## 1.0.2alpha - 05.07.12
+- Added statusbar notifications
+- Fixed list background color
+
+## 1.0.1alpha - 04.07.12
+- Released
