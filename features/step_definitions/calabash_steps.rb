@@ -14,7 +14,7 @@ Then /^the stopwatch should( not)? be at "([^\"]*)"$/ do |negate, value_stated|
 end
 
 And /^I clear the stopwatch$/ do 
-	if is_stopwatch_running?
+	if stopwatch_is_running?
 		performAction('click_on_view_by_id', 'toggle_stopwatch')
 	end
 	performAction('click_on_view_by_id', 'clear_stopwatch')
@@ -44,16 +44,6 @@ And /^I set the NumberPickers to (\d+ hours), (\d+ minutes), and (\d+ seconds)$/
 	setAmountOf(seconds, 75)
 end
 
-Then /^I (do not)? see "([^\"]*)" on the timer screen at position 1$/ do |negate, saved_timer|
-	time_found = query("listview textview index:1").first["text"]
-	negate ? saved_timer.should_not == time_found : saved_timer.should == time_found
-end
-
 And /^I clear the timers$/ do
 	performAction('press_long_on_text', 'Reset')
-end
-
-Then /^I will see "([^\"]*)" on the timer screen at position 2$/ do |saved_timer|
-	time_found = query("listview textview index:4").first["text"]
-	saved_timer.should == time_found
 end

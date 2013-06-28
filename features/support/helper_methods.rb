@@ -1,4 +1,4 @@
-def is_stopwatch_running?
+def stopwatch_is_running?
 	begin
 		performAction('assert_text', 'Pause', true)
 		true
