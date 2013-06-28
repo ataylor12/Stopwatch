@@ -7,10 +7,11 @@ def stopwatch_is_running?
 	end
 end
 
-def setAmountOf(time, at_this_location)
-	if time > 0
+def setAmountOf(time, percent_from_left, percent_from_top)
+	
+  if time > 0
 		for i in 1..time
-			performAction('click_on_screen', at_this_location, 25)
+			performAction('click_on_screen', percent_from_left, percent_from_top)
 		end
 	end
 end

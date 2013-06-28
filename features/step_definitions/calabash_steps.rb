@@ -39,17 +39,21 @@ Then /^the lap record will( not)? have matching times for lap time and total tim
 end
 
 And /^I set the NumberPickers to (\d+ hours), (\d+ minutes), and (\d+ seconds)$/ do |hours, minutes, seconds|
-	setAmountOf(hours, 25)
-	setAmountOf(minutes, 50)
-	setAmountOf(seconds, 75)
+  setAmountOf(hours, 25, 25)
+	setAmountOf(minutes, 50, 25)
+	setAmountOf(seconds, 75, 25)
 end
 
 And /^I clear the timers$/ do
-	performAction('press_long_on_text', 'Reset')
+	performAction('long_press_on_view_by_id', 'clear_timer')
 end
 
-Then /^I will( not)? see "([^\"]*)" on the timer screen$/ do |negate, saved_timer|
+Then /^I will see "([^\"]*)" on the timer screen$/ do |saved_timer|
   time_found = query("listview textview index:1").first["text"]
-  negate ? saved_timer.should_not == time_found : saved_timer.should == time_found
+  saved_timer.should == time_found
+end
+
+Then /^I will not see "([^\"]*)" on the timer screen$/ do |saved_timer|
+  query("listview textview").length.should == 0
 end
 
