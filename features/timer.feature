@@ -9,7 +9,7 @@ Feature: As a user I want to add and use the timers.
 		When I press the button with id "timer_add"
 		And I set the NumberPickers to 00 hours, 01 minutes, and 10 seconds
 		And I press the "Save" button
-		Then I see "00:01:10" on the timer screen
+		Then I will see "00:01:10" on the timer screen
 		And I clear the timers
-		And I do not see "00:01:10" on the timer screen
+		And I will not "00:01:10" on the timer screen
 		
