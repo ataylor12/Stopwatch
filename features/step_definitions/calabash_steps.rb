@@ -47,3 +47,9 @@ end
 And /^I clear the timers$/ do
 	performAction('press_long_on_text', 'Reset')
 end
+
+Then /^I will( not)? see "([^\"]*)" on the timer screen at position 2$/ do |negate, saved_timer|
+  time_found = query("listview textview index:4").first["text"]
+  negate ? saved_timer.should_not == time_found : saved_timer.should == time_found
+end
+
