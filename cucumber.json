@@ -1,0 +1,856 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "As a user I want to start and stop the stopwatch, track laps, and add and use the timers.",
+    "line": 1,
+    "description": "",
+    "id": "as-a-user-i-want-to-start-and-stop-the-stopwatch,-track-laps,-and-add-and-use-the-timers.",
+    "uri": "features\\stopwatch.feature",
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "Ensure app has started",
+        "line": 3,
+        "description": "",
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I start the app",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"STOPWATCH\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "STOPWATCH"
+                }
+              ],
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1262072000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "I can start and stop the stopwatch",
+        "line": 7,
+        "description": "",
+        "id": "as-a-user-i-want-to-start-and-stop-the-stopwatch,-track-laps,-and-add-and-use-the-timers.;i-can-start-and-stop-the-stopwatch",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I start the app",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"STOPWATCH\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "STOPWATCH"
+                }
+              ],
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I press the button with id \"toggle_stopwatch\"",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 28,
+                  "val": "toggle_stopwatch"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1027059000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I wait",
+            "line": 9,
+            "match": {
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/progress_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2093119999
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I press the \"Pause\" button",
+            "line": 10,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 13,
+                  "val": "Pause"
+                }
+              ],
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/press_button_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2498142000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the stopwatch should not be at \"00:00\"",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 20,
+                  "val": " not"
+                },
+                {
+                  "offset": 32,
+                  "val": "00:00"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1083061000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I clear the stopwatch",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6941397000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "I can reset the stopwatch",
+        "line": 14,
+        "description": "",
+        "id": "as-a-user-i-want-to-start-and-stop-the-stopwatch,-track-laps,-and-add-and-use-the-timers.;i-can-reset-the-stopwatch",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I start the app",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"STOPWATCH\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "STOPWATCH"
+                }
+              ],
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1315075000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I press the button with id \"toggle_stopwatch\"",
+            "line": 15,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 28,
+                  "val": "toggle_stopwatch"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 891051000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I wait",
+            "line": 16,
+            "match": {
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/progress_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2088120000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I press the \"Pause\" button",
+            "line": 17,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 13,
+                  "val": "Pause"
+                }
+              ],
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/press_button_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2664152000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I press the button with id \"clear_stopwatch\"",
+            "line": 18,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 28,
+                  "val": "clear_stopwatch"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1040060000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the stopwatch should be at \"00:00\"",
+            "line": 19,
+            "match": {
+              "arguments": [
+                {
+                },
+                {
+                  "offset": 28,
+                  "val": "00:00"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1184067000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "I can record laps",
+        "line": 22,
+        "description": "",
+        "tags": [
+          {
+            "name": "@thisone",
+            "line": 21
+          }
+        ],
+        "id": "as-a-user-i-want-to-start-and-stop-the-stopwatch,-track-laps,-and-add-and-use-the-timers.;i-can-record-laps",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I start the app",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"STOPWATCH\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "STOPWATCH"
+                }
+              ],
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1358078000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I press the button with id \"toggle_stopwatch\"",
+            "line": 23,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 28,
+                  "val": "toggle_stopwatch"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1057060000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I press the \"Lap\" button 2 times",
+            "line": 24,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 13,
+                  "val": "Lap"
+                },
+                {
+                  "offset": 25,
+                  "val": "2 times"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5435311000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I can see two lap records on the screen",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3189182000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I clear the stopwatch",
+            "line": 26,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000172000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Lap 1's record is accurate",
+        "line": 29,
+        "description": "",
+        "tags": [
+          {
+            "name": "@thisone",
+            "line": 28
+          }
+        ],
+        "id": "as-a-user-i-want-to-start-and-stop-the-stopwatch,-track-laps,-and-add-and-use-the-timers.;lap-1's-record-is-accurate",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I start the app",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"STOPWATCH\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "STOPWATCH"
+                }
+              ],
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1199069000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I press the button with id \"toggle_stopwatch\"",
+            "line": 30,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 28,
+                  "val": "toggle_stopwatch"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 923052000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I press the \"Lap\" button 1 times",
+            "line": 31,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 13,
+                  "val": "Lap"
+                },
+                {
+                  "offset": 25,
+                  "val": "1 times"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2448140000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the lap record will have matching times for lap time and total time",
+            "line": 32,
+            "match": {
+              "arguments": [
+                {
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3340192000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I clear the stopwatch",
+            "line": 33,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2921167000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Lap 2's record is accurate",
+        "line": 35,
+        "description": "",
+        "id": "as-a-user-i-want-to-start-and-stop-the-stopwatch,-track-laps,-and-add-and-use-the-timers.;lap-2's-record-is-accurate",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I start the app",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"STOPWATCH\"",
+            "line": 5,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "STOPWATCH"
+                }
+              ],
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/assert_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1439082000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I press the button with id \"toggle_stopwatch\"",
+            "line": 36,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 28,
+                  "val": "toggle_stopwatch"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 971056000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I press the \"Lap\" button 2 times",
+            "line": 37,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 13,
+                  "val": "Lap"
+                },
+                {
+                  "offset": 25,
+                  "val": "2 times"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5015287000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the lap record will not have matching times for lap time and total time",
+            "line": 38,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 19,
+                  "val": " not"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3124179000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I clear the stopwatch",
+            "line": 39,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3420195000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "As a user I want to add and use the timers.",
+    "line": 1,
+    "description": "",
+    "id": "as-a-user-i-want-to-add-and-use-the-timers.",
+    "uri": "features\\timer.feature",
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "I start the app and slide to timer screen",
+        "line": 3,
+        "description": "",
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I start the app",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I swipe right",
+            "line": 5,
+            "match": {
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/navigation_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4279245000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I see \"TIMER\"",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 7,
+                  "val": "TIMER"
+                }
+              ],
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/assert_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1123064000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "I can add/delete a time to/from the timer",
+        "line": 8,
+        "description": "",
+        "id": "as-a-user-i-want-to-add-and-use-the-timers.;i-can-add/delete-a-time-to/from-the-timer",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I start the app",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I swipe right",
+            "line": 5,
+            "match": {
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/navigation_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I see \"TIMER\"",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 7,
+                  "val": "TIMER"
+                }
+              ],
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/assert_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I press the button with id \"timer_add\"",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 28,
+                  "val": "timer_add"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 968055000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I set the NumberPickers to 00 hours, 01 minutes, and 10 seconds",
+            "line": 10,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 27,
+                  "val": "00 hours"
+                },
+                {
+                  "offset": 37,
+                  "val": "01 minutes"
+                },
+                {
+                  "offset": 53,
+                  "val": "10 seconds"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10997630000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I press the \"Save\" button",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 13,
+                  "val": "Save"
+                }
+              ],
+              "location": "calabash-android-0.4.6/lib/calabash-android/steps/press_button_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2637150000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I will see \"00:01:10\" on the timer screen",
+            "line": 12,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 12,
+                  "val": "00:01:10"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2440140000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I clear the timers",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/calabash_steps.rb:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2826162000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I will not see \"00:01:10\" on the timer screen",
+            "line": 14,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "00:01:10"
+                }
+              ],
+              "location": "features/step_definitions/calabash_steps.rb:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1126064000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
